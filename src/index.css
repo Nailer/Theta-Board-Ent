@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* for the chess pages */
+
+html, body, #app, #app>div {
+  background-color: #EEEEEE;
+}
+
+/* for the chess pages */
