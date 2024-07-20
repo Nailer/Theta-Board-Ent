@@ -33,6 +33,9 @@ function App() {
             <Link to="/about">
               <Menu.Item key="3">About</Menu.Item>
             </Link>
+            <Link to="/about">
+              <Menu.Item key="3">Try Theta BoardGames</Menu.Item>
+            </Link>
             <ConnectButton />
           </Menu>
         </Header>
