@@ -1,10 +1,11 @@
 import { Box, Card, createStyles, makeStyles } from '@material-ui/core'
 import { observer } from 'mobx-react-lite'
-import { useAnalysisStore } from '../../context'
+import { useAnalysisStore } from '../../context.tsx'
 import { StoreProps } from '../../stores/game'
-import InputPgn from './input_pgn'
+import InputPgn from './input_pgn.tsx'
+import React from 'react'
 
-import Moves from './move_list'
+import Moves from './move_list.tsx'
 
 const useStyles = makeStyles(theme =>
   createStyles({

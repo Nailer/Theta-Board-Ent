@@ -6,13 +6,13 @@ import {
   makeStyles
 } from '@material-ui/core'
 import { FC } from 'react'
-
+import React from 'react'
 //Components
-import AnalysisContainer from '../components/chess_analysis/analysis_container'
-import BoardContainer from '../components/chess_analysis/board_container'
+import AnalysisContainer from '../components/chess_analysis/analysis_container.tsx'
+import BoardContainer from '../components/chess_analysis/board_container.tsx'
 
 // Store
-import { useAnalysisStore } from '../context'
+import { useAnalysisStore } from '../context.tsx'
 
 const useStyles = makeStyles(theme =>
   createStyles({

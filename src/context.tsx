@@ -1,9 +1,10 @@
 // Packages
+import React from 'react'
 import { useLocalObservable } from 'mobx-react-lite'
 import { createContext, useContext } from 'react'
 
 // Store
-import { createAnalysisStore, StoreProps as analysisProps } from './stores/game'
+import { createAnalysisStore, StoreProps as analysisProps } from './stores/game.ts'
 
 const AppContextAnalysis = createContext(null)
 

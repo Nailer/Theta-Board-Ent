@@ -7,7 +7,7 @@ import DialogContentText from '@mui/material/DialogContentText'
 import DialogTitle from '@mui/material/DialogTitle'
 import TextField from '@mui/material/TextField'
 import { Link } from 'react-router-dom'
-import toPGN from '../../util/toPGN'
+import toPGN from '../../utils/toPGN.ts'
 
 function Checkmate({ showDialog, turn, history }) {
   const [open, setOpen] = useState(false)

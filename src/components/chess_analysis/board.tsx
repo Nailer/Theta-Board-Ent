@@ -1,7 +1,8 @@
 import { observer } from 'mobx-react-lite'
 import { Chessboard } from 'react-chessboard'
-import { useAnalysisStore } from '../../context'
+import { useAnalysisStore } from '../../context.tsx'
 import { StoreProps } from '../../stores/game'
+import React from 'react'
 
 const Board = () => {
   const store: StoreProps = useAnalysisStore()

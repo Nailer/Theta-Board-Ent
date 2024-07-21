@@ -8,6 +8,8 @@ import logo from "./assets/logo.png";
 import "antd/dist/antd.min.css";
 import "./App.css";
 import About from "./components/About";
+// import Main from "./main.tsx";
+import Apps from './main.tsx'
 import Discover from "./components/Discover";
 import ConnectButton from "./components/ConnectButton";
 
@@ -33,7 +35,7 @@ function App() {
             <Link to="/about">
               <Menu.Item key="3">About</Menu.Item>
             </Link>
-            <Link to="/about">
+            <Link to="/game">
               <Menu.Item key="3">Try Theta BoardGames</Menu.Item>
             </Link>
             <ConnectButton />
@@ -45,13 +47,14 @@ function App() {
             <Route exact path="/" element={<About/>}/>
               <Route exact path="/sell" element={<UploadPage />} />
               <Route exact path="/about" element={<About />} />
+              <Route exact path="/game" element={<Apps />} />
               <Route path="/:address" element={<Discover />} />
             </Routes>
           </div>
         </Content>
         <Footer>
           {APP_NAME} &copy;2022 - Built for the{" "}
-          <a href="https://theta-2022-hackathon.devpost.com/" target="_blank">
+          <a href="https://theta-2022-hackathon.devpost.com/" target="_blank" rel="noreferrer">
             Theta Q1 hackathon 2022
           </a>
           . Active Network: {ACTIVE_NETWORK.name}

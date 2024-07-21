@@ -1,6 +1,6 @@
 import { createStyles, makeStyles } from '@material-ui/core'
-
-import Board from './board'
+import React from 'react'
+import Board from './board.tsx'
 
 const useStyles = makeStyles(theme =>
   createStyles({

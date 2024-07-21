@@ -5,7 +5,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 
 // Store
-import { useAnalysisStore } from '../../context'
+import { useAnalysisStore } from '../../context.tsx'
 import { StoreProps } from '../../stores/game'
 
 function useQuery() {

@@ -1,6 +1,7 @@
 import React, { forwardRef, useEffect, useRef, useState, useMemo } from 'react'
 import { Chess } from 'chess.js'
-import Engine from '../engine'
+import Engine from '../engine.ts'
+// import React from 'react'
 import { Chessboard } from 'react-chessboard'
 
 const boardWrapper = {

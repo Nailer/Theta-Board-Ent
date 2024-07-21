@@ -1,10 +1,10 @@
 import { createStyles, Grid, makeStyles } from '@material-ui/core'
 import { observer } from 'mobx-react-lite'
-import { useAnalysisStore } from '../../context'
-import { StoreProps } from '../../stores/game'
-import Commands from './commands'
-import Move from './move'
-import Report from './report'
+import { useAnalysisStore } from '../../context.tsx'
+import { StoreProps } from '../../stores/game.ts'
+import Commands from './commands.tsx'
+import Move from './move.tsx'
+import Report from './report.tsx'
 
 const useStyles = makeStyles(theme =>
   createStyles({

@@ -4,7 +4,7 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight'
 import ComputerIcon from '@material-ui/icons/Computer'
 import TrashIcon from '@material-ui/icons/Delete'
 import { FC } from 'react'
-import { useAnalysisStore } from '../../context'
+import { useAnalysisStore } from '../../context.tsx'
 import { StoreProps } from '../../stores/game'
 
 const Commands: FC = () => {

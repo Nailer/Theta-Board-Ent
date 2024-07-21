@@ -1,3 +1,4 @@
+import React from 'react'
 import {
   Avatar,
   Box,
@@ -8,9 +9,9 @@ import {
 } from '@material-ui/core'
 import { observer } from 'mobx-react-lite'
 import { FC } from 'react'
-import { useAnalysisStore } from '../../context'
-import { StoreProps } from '../../stores/game'
-import { MoveStatus } from './move'
+import { useAnalysisStore } from '../../context.tsx'
+import { StoreProps } from '../../stores/game.ts'
+import { MoveStatus } from './move.tsx'
 
 const useStyles = makeStyles(theme =>
   createStyles({
