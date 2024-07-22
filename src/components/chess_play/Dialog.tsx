@@ -205,7 +205,7 @@ function Start({ start, showDialog }) {
 
             <br />
 
-            <Link to="/ai">Play against the AI</Link>
+            <Link to="/game/ai:address">Play against the AI</Link>
           </DialogContentText>
         </DialogContent>
         <DialogActions>

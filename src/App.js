@@ -9,6 +9,7 @@ import "antd/dist/antd.min.css";
 import "./App.css";
 import About from "./components/About";
 // import Main from "./main.tsx";
+// import { MainRecorder}  from "./@UI/MainRecorder.tsx";
 import Apps from './main.tsx'
 import Discover from "./components/Discover";
 import ConnectButton from "./components/ConnectButton";

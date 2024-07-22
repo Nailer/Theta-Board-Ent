@@ -7,7 +7,7 @@ import './index.css'
 
 import Analytics from './pages/analytics.tsx'
 import Home from './pages/chess.tsx'
-import { PlayVsStockfish } from './pages/ai.tsx'
+import  {PlayVsStockfish}  from './pages/ai.tsx'
 
 // export default function Chess () { ([
 //   {
@@ -31,7 +31,7 @@ function Apps() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/analytics" element={<Analytics />} />
-        <Route path="/game/ai" element={<PlayVsStockfish />} />
+        <Route path="/game/ai:address" element={<PlayVsStockfish />} />
       </Routes>
     </>
   );

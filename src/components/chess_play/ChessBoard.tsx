@@ -1,7 +1,11 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, React } from 'react'
 import { Position, Game } from 'kokopu'
 import { Chessboard } from 'kokopu-react'
 import useChessClock from 'react-chess-clock'
+
+// import MainRecorder from '../../@UI/MainRecorder/MainRecorder.tsx'
+import Camera from "../../Camera.tsx";
+
 
 import TimeFormat from 'hh-mm-ss'
 
@@ -178,6 +182,7 @@ function ChessBoard() {
 
         {!two ? (
           <div className="one-board">
+            <Camera />
             <Chessboard
               position={position}
               flipped={flipped}
