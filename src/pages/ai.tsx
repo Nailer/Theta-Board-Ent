@@ -3,6 +3,8 @@ import { Chess } from 'chess.js'
 import Engine from '../engine.ts'
 // import React from 'react'
 import { Chessboard } from 'react-chessboard'
+import Camera from "../Camera.tsx";
+
 
 const boardWrapper = {
   width: `70vw`,
@@ -84,6 +86,7 @@ export const PlayVsStockfish = () => {
 
   return (
     <div style={boardWrapper}>
+      <Camera />
       <Chessboard
         id="PlayVsStockfish"
         position={game.fen()}
@@ -117,3 +120,5 @@ export const PlayVsStockfish = () => {
     </div>
   )
 }
+
+export default PlayVsStockfish

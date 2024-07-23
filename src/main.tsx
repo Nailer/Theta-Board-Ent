@@ -31,7 +31,7 @@ function Apps() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/analytics" element={<Analytics />} />
-        <Route path="/game/ai:address" element={<PlayVsStockfish />} />
+        <Route path="/game/ai" element={<PlayVsStockfish />} />
       </Routes>
     </>
   );

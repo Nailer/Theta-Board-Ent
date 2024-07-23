@@ -10,8 +10,8 @@
 }
 
 .ant-layout-header {
-  background-color: white;
-  background: white;
+  background-color: #282c34;
+  background: #282c34;
 }
 
 .container {
@@ -19,7 +19,7 @@
   margin: 0 auto;
   padding: 50px;
   min-height: 85vh;
-  background: white;
+  background: #282c34;
 }
 
 .about-container {

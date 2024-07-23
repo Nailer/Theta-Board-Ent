@@ -11,6 +11,7 @@ import About from "./components/About";
 // import Main from "./main.tsx";
 // import { MainRecorder}  from "./@UI/MainRecorder.tsx";
 import Apps from './main.tsx'
+import {PlayVsStockfish} from "./pages/ai.tsx";
 import Discover from "./components/Discover";
 import ConnectButton from "./components/ConnectButton";
 
@@ -21,7 +22,7 @@ function App() {
     <div className="App">
       <Layout>
         <Header className="header">
-          <Menu theme="light" mode="horizontal" defaultSelectedKeys={["2"]}>
+          <Menu theme="gray" mode="horizontal" defaultSelectedKeys={["2"]}>
             <Link to="/">
               <Menu.Item key="0">
                 <img src={logo} className="header-image" />
@@ -45,18 +46,18 @@ function App() {
         <Content>
           <div className="container">
             <Routes>
-            <Route exact path="/" element={<About/>}/>
+              <Route exact path="/" element={<About/>}/>
               <Route exact path="/sell" element={<UploadPage />} />
               <Route exact path="/about" element={<About />} />
-              <Route exact path="/game" element={<Apps />} />
+              <Route exact path="/game" element={<PlayVsStockfish />} />
               <Route path="/:address" element={<Discover />} />
             </Routes>
           </div>
         </Content>
         <Footer>
-          {APP_NAME} &copy;2022 - Built for the{" "}
-          <a href="https://theta-2022-hackathon.devpost.com/" target="_blank" rel="noreferrer">
-            Theta Q1 hackathon 2022
+          {APP_NAME} &copy;2024 - Built for the{" "}
+          <a href="https://theta2024.devpost.com/?ref_feature=challenge&ref_medium=your-open-hackathons&ref_content=Submissions+open" target="_blank" rel="noreferrer">
+            Theta Network 2024 Hackathon
           </a>
           . Active Network: {ACTIVE_NETWORK.name}
         </Footer>
